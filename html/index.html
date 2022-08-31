@@ -9,7 +9,11 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <link rel="shortcut icon" href="assets/img/natura_logo.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/img/natura_logo.png"
+      type="image/x-icon"
+    />
 
     <!-- Bootstrap CSS v5.x -->
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
@@ -25,7 +29,9 @@
   </head>
   <body>
     <!-- Header / Nav -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top">
+    <nav
+      class="navbar navbar-expand-lg bg-white navbar-light sticky-top main-navbar"
+    >
       <div class="container">
         <a class="navbar-brand py-3" href="#">
           <img src="assets/img/natura_logo.png" alt="" />
@@ -52,28 +58,50 @@
               >
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link"
-                aria-current="page"
-                href="pages/about.html"
+              <a class="nav-link" aria-current="page" href="pages/about.html"
                 >About</a
               >
             </li>
-            
+
             <li class="nav-item">
               <a class="nav-link" href="pages/products.html">Products</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/product-details.html">Product Details</a>
+              <a class="nav-link" href="pages/product-details.html"
+                >Product Details</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/checkout.html">Checkout</a>
             </li>
             <li class="nav-item dropdown">
-              <button class="btn nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <button
+                class="btn nav-link dropdown-toggle"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 Networking
               </button>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item nav-link" href="pages/join-us.html">Join Us</a></li>
-                <li><a class="dropdown-item nav-link" href="pages/networking.html">Benefits</a></li>
-                <li><a class="dropdown-item nav-link" href="pages/network-oportunities.html">Oportunities</a></li>
+                <li>
+                  <a class="dropdown-item nav-link" href="pages/join-us.html"
+                    >Join Us</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item nav-link" href="pages/networking.html"
+                    >Benefits</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item nav-link"
+                    href="pages/network-oportunities.html"
+                    >Oportunities</a
+                  >
+                </li>
               </ul>
             </li>
             <li class="nav-item">
@@ -113,7 +141,6 @@
     <footer
       id="footer"
       class="bg-white border-width-1 border-f5 block-footer-1 pt-5"
-      style="background: url(assets/img/bg-dot.png); background-size: cover"
     >
       <div class="container">
         <div class="footer-widgets-wrap">
@@ -243,8 +270,8 @@
           e.preventDefault();
           // remove active class
           var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
           // e.classList.remove('active')
           getPage(page);
           // e.classList.add('active')

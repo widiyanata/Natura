@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 a,
 .navbar-light .navbar-nav .nav-link {
@@ -36,6 +36,10 @@ a:hover {
   padding-right: 1.2em;
 }
 
+.main-navbar {
+  border-bottom: 4px solid #5bc029;
+}
+
 .login-register {
   border-left: 1px solid #5bc029;
   padding-left: 1em;
@@ -44,7 +48,8 @@ a:hover {
 
 /* HOMEPAGE */
 .bg-product-img-slider {
-  background: linear-gradient(31.85deg, #32c1b9 -32.26%, #92fff8 102.1%);
+  /* background: linear-gradient(31.85deg, #32c1b9 -32.26%, #92fff8 102.1%); */
+  background: radial-gradient(48.9% 48.9% at 50% 50%, #76fff7 0%, #f7ffff 100%);
 }
 
 #carouselProducts .carousel-indicators [data-bs-target] {
@@ -60,6 +65,10 @@ a:hover {
     #ffffff 0%,
     #e8feff 100%
   );
+}
+
+#carousel-testimony .carousel-inner {
+  background-color: #d9d9d9;
 }
 /* END HOMEPAGE */
 
@@ -163,7 +172,6 @@ span.product-num {
 }
 
 .product-faq-header {
-
 }
 .product-faq-header:after {
   border-bottom: 4px solid #5bc029;
@@ -175,13 +183,11 @@ span.product-num {
 
 .product-faq-header h2 {
   display: inline-block;
-    background: #fff;
-    padding: 0 2em;
+  background: #fff;
+  padding: 0 2em;
 }
 
-
 /* End Product Details */
-
 
 /* Join Us */
 #join-us {
@@ -189,19 +195,21 @@ span.product-num {
 }
 
 .oportunities-header {
-  background: linear-gradient(270deg, #E0AE93 0%, #CD7E54 100%);
+  background: linear-gradient(270deg, #e0ae93 0%, #cd7e54 100%);
 }
 /* -------------- */
 
 #do-dont {
-  background-color: #E3FFFF;
+  background-color: #e3ffff;
 }
 #do-dont li {
   list-style-position: inside;
 }
 
-
 /* FOOTER */
+#footer {
+  border-top: 8px solid #5bc029;
+}
 #footer .widget h5 {
   color: #5bc029;
 }
@@ -212,6 +220,10 @@ span.product-num {
 #footer .widget ul li {
   list-style: none;
   padding-bottom: 0.5em;
+}
+
+#footer .widget ul li a {
+  color: #333;
 }
 .footer-copyright {
   border-top: 3px solid #5bc029;
@@ -293,4 +305,60 @@ span.product-num {
 .btn-outline-success.disabled {
   color: #5bc029;
   background-color: transparent;
+}
+
+/* Checkout */
+.checkout.sticky-top {
+  top: 60px;
+  z-index: 1010;
+}
+
+span.divider-dot:before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background: #817e7e;
+  display: block;
+  border-radius: 50%;
+}
+
+.form-control,
+.input-group,
+.bank-detail {
+  border-radius: 12px;
+  box-shadow: inset 1px 1px 10px #e7e7e7;
+}
+
+.input-group .form-control {
+  box-shadow: none;
+}
+.d-none {
+  transition: all 0.2s ease-out;
+}
+#credit-card-detail.hide,
+#bank-detail.hide {
+  display: none !important;
+  transition: all ease-in 1s;
+}
+#credit-card-detail.hide.show {
+  display: block !important;
+}
+#bank-detail.hide.show {
+  display: flex !important;
+}
+
+.checkout-step a.active {
+  font-weight: bold;
+}
+
+.checkout-form .card {
+  border-radius: 25px;
+}
+.btn {
+  border-radius: 15px;
+}
+
+.checkout-prev a {
+  text-decoration: none;
+  color: #aaa;
 }

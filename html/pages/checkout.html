@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Linkincube - Natura Herbalize Indonesia</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="../assets/img/natura_logo.png"
+      type="image/x-icon"
+    />
+
+    <!-- Bootstrap CSS v5.x -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+  <body>
+    <div
+      id="checkout-page"
+      class="pt-3 pb-5"
+      style="
+        background: url(../assets/img/checkout-bg.png);
+        background-size: cover;
+      "
+    >
+      <div class="container">
+        <div class="row gx-5">
+          <div class="col-md-5">
+            <div class="checkout pt-2 sticky-top">
+              <div class="checkout-product mb-3">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="checkout-product-img">
+                      <img
+                        class="img-fluid"
+                        src="../assets/img/product-1.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <h5 class="my-3">
+                      LIFE ROOTS Respiratory Clear Oral Spray
+                    </h5>
+                    <div
+                      class="checkout-product-quantity d-flex justify-content-between"
+                    >
+                      <input
+                        type="number"
+                        class="form-control form-control-lg bg-light border-0 me-auto text-center"
+                        style="max-width: 60px"
+                        value="1"
+                      />
+
+                      <b class="price">Rp 450.000,-</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="checkout-product mb-3">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="checkout-product-img">
+                      <img
+                        class="img-fluid"
+                        src="../assets/img/product-2.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <h5 class="my-3">
+                      LIFE ROOTS Respiratory Clear Oral Spray
+                    </h5>
+                    <div
+                      class="checkout-product-quantity d-flex justify-content-between"
+                    >
+                      <input
+                        type="number"
+                        class="form-control form-control-lg bg-light border-0 me-auto text-center"
+                        style="max-width: 60px"
+                        value="1"
+                      />
+
+                      <b class="price">Rp 490.000,-</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="checkout-coupon border-top py-4">
+                <div class="row">
+                  <div class="col-md-8">
+                    <input
+                      type="text"
+                      class="form-control form-control-lg bg-light border-0"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <div class="d-grid gap-1">
+                      <input type="submit" class="btn btn-success rounded" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="checkout-details border-top py-4">
+                <div class="subtotal d-flex justify-content-between">
+                  <span>Subtotal</span>
+                  <span> Rp 900.000,- </span>
+                </div>
+                <div class="shipping d-flex justify-content-between">
+                  <span>Shipping</span>
+                  <span>Calculated at shipping</span>
+                </div>
+              </div>
+
+              <div
+                class="checkout-total d-flex justify-content-between border-top py-4"
+              >
+                <b>Grand Total</b>
+                <span>IDR <b>Rp 900.000,-</b></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="checkout-form pt-5">
+              <div class="card p-lg-4 border-0 shadow">
+                <div class="card-header bg-white border-0">
+                  <h4 class="fw-bold">Checkout</h4>
+                  <div class="steps mb-4">
+                    <!-- Nav tabs -->
+                    <ul class="nav checkout-step" id="myTab" role="tablist">
+                        <a class="me-1" href="#">Cart > </a>
+                      <li class="nav-item" role="presentation">
+                        
+                        <a
+                          class="active me-1"
+                          id="information-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#information"
+                          type="button"
+                          role="tab"
+                          aria-controls="information"
+                          aria-selected="true"
+                        >
+                          Information >
+                        </a>
+                      </li>
+                      <li class="nav-item me-1" role="presentation">
+                        <a
+                          class=""
+                          id="shipping-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#shipping"
+                          type="button"
+                          role="tab"
+                          aria-controls="shipping"
+                          aria-selected="false"
+                        >
+                          shipping >
+                        </a>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <a
+                          class=""
+                          id="payments-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#payments"
+                          type="button"
+                          role="tab"
+                          aria-controls="payments"
+                          aria-selected="false"
+                        >
+                          payments
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div
+                      class="tab-pane active"
+                      id="information"
+                      role="tabpanel"
+                      aria-labelledby="information-tab"
+                    >
+                      <div class="form-information">
+                        <h5 class="d-flex justify-content-between mb-3">
+                          <span> Contact Information </span>
+                          <small class="ms-auto"
+                            >Already have an account? <a href="#">Log in</a>
+                          </small>
+                        </h5>
+                        <div class="form-group mb-3">
+                          <input
+                            type="text"
+                            class="form-control form-control-lg bg-light border-0"
+                            placeholder="Email or mpbile phone number"
+                          />
+                        </div>
+                        <div class="form-check form-check-inline mb-3">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="emailme"
+                            value="1"
+                            id="emailme"
+                          />
+                          <label class="form-check-label" for="emailme"
+                            >Email me with news and offers</label
+                          >
+                        </div>
+
+                        <h5 class="mt-5">Shipping Address</h5>
+                        <div class="mb-3">
+                          <select class="form-select" name="region" id="">
+                            <option value="">Select a Region</option>
+                            <option>New Delhi</option>
+                            <option>Istanbul</option>
+                            <option>Jakarta</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <input
+                                type="text"
+                                class="form-control form-control-lg bg-light border-0"
+                                placeholder="First Name"
+                              />
+                            </div>
+                            <div class="col-md-6">
+                              <input
+                                type="text"
+                                class="form-control form-control-lg bg-light border-0"
+                                placeholder="Last Name"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                          <textarea
+                            name=""
+                            id=""
+                            cols="30"
+                            rows="4"
+                            class="form-control form-control-lg bg-light border-0"
+                          ></textarea>
+                        </div>
+                        <div class="mb-3">
+                          <input
+                            type="text"
+                            class="form-control form-control-lg bg-light border-0"
+                            placeholder="Appartment, suite, etc (optional)"
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <input
+                            type="text"
+                            class="form-control form-control-lg bg-light border-0"
+                            placeholder="City"
+                          />
+                        </div>
+
+                        <div class="mb-3">
+                          <input
+                            type="text"
+                            class="form-control form-control-lg bg-light border-0"
+                            placeholder="Phone"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="checkout-nav-btn d-flex justify-content-between my-5"
+                      >
+                        <div class="checkout-prev">
+                          <a href="/index.html" class="btn-link btn btnPrev">
+                            <i class="fas fa-chevron-left"></i>
+                            Return to cart
+                          </a>
+                        </div>
+                        <div class="checkout-next">
+                          <button
+                            class="btn btn-outline-success btn-lg px-5 btnNext"
+                          >
+                            Continue to shipping
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="tab-pane"
+                      id="shipping"
+                      role="tabpanel"
+                      aria-labelledby="shipping-tab"
+                    >
+                      <div class="form-shipping">
+                        <div class="contact-detail">
+                          <div class="input-group mb-3">
+                            <span class="input-group-text bg-light border-0"
+                              >Contact</span
+                            >
+                            <input
+                              type="text"
+                              name="name"
+                              class="form-control bg-light border-0 form-control-lg"
+                              placeholder="Johndoe@gmail.com"
+                            />
+                            <span
+                              class="input-group-text text-success bg-light border-0"
+                              >Change</span
+                            >
+                          </div>
+                          <div class="input-group mb-3">
+                            <span class="input-group-text bg-light border-0"
+                              >Ship to</span
+                            >
+                            <input
+                              type="text"
+                              name="name"
+                              class="form-control bg-light border-0 form-control-lg"
+                              placeholder="Johndoe@gmail.com"
+                            />
+                            <span
+                              class="input-group-text text-success bg-light border-0"
+                              >Change</span
+                            >
+                          </div>
+                          <div class="input-group mb-3">
+                            <span class="input-group-text bg-light border-0"
+                              >Shiping</span
+                            >
+                            <input
+                              type="text"
+                              name="name"
+                              class="form-control bg-light border-0 form-control-lg"
+                              placeholder="Starndard Rp250000,-"
+                            />
+                            <span
+                              class="input-group-text text-success bg-light border-0"
+                              >Change</span
+                            >
+                          </div>
+                        </div>
+                        <div class="shipping-method mt-5">
+                          <h5>Shipping Method</h5>
+                          <div class="input-group input-group-lg mb-3">
+                            <span class="input-group-text bg-light border-0">
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="shipping-method"
+                                  value=""
+                                  id="shipping-standard"
+                                  checked
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="shipping-standard"
+                                >
+                                  Standard
+                                </label>
+                              </div>
+                            </span>
+                            <input
+                              type="text"
+                              class="form-control text-end bg-light border-0"
+                              name="name"
+                              placeholder=""
+                              aria-label=""
+                              value="Rp 250.000,-"
+                              readonly
+                            />
+                          </div>
+                          <div class="input-group input-group-lg mb-3">
+                            <span class="input-group-text bg-light border-0">
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="shipping-method"
+                                  value=""
+                                  id="shipping-express"
+                                  checked
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="shipping-express"
+                                >
+                                  Express
+                                </label>
+                              </div>
+                            </span>
+                            <input
+                              type="text"
+                              class="form-control text-end bg-light border-0"
+                              name="name"
+                              placeholder=""
+                              aria-label=""
+                              value="Rp 550.000,-"
+                              readonly
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="checkout-nav-btn d-flex justify-content-between my-5"
+                      >
+                        <div class="checkout-prev">
+                          <a href="#" class="btn-link btn btnPrev">
+                            <i class="fas fa-chevron-left"></i>
+                            Return to information
+                          </a>
+                        </div>
+                        <div class="checkout-next">
+                          <button
+                            class="btn btn-outline-success btn-lg px-5 btnNext"
+                          >
+                            Continue to payment
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane"
+                      id="payments"
+                      role="tabpanel"
+                      aria-labelledby="payments-tab"
+                    >
+                      <div class="form-payment">
+                        <div class="contact-detail">
+                          <div class="input-group mb-3 input-group-lg">
+                            <span class="input-group-text bg-light border-0"
+                              >Contact</span
+                            >
+                            <input
+                              type="text"
+                              name="name"
+                              class="form-control bg-light border-0 form-control-lg"
+                              placeholder="Johndoe@gmail.com"
+                            />
+                            <span
+                              class="input-group-text text-success bg-light border-0"
+                              >Change</span
+                            >
+                          </div>
+                          <div class="input-group mb-3 input-group-lg">
+                            <span class="input-group-text bg-light border-0"
+                              >Ship to</span
+                            >
+                            <input
+                              type="text"
+                              name="name"
+                              class="form-control bg-light border-0 form-control-lg"
+                              placeholder="Johndoe@gmail.com"
+                            />
+                            <span
+                              class="input-group-text text-success bg-light border-0"
+                              >Change</span
+                            >
+                          </div>
+                          <div class="input-group mb-3 input-group-lg">
+                            <span class="input-group-text bg-light border-0"
+                              >Shiping</span
+                            >
+                            <input
+                              type="text"
+                              name="name"
+                              class="form-control bg-light border-0 form-control-lg"
+                              placeholder="Starndard Rp250000,-"
+                            />
+                            <span
+                              class="input-group-text text-success bg-light border-0"
+                              >Change</span
+                            >
+                          </div>
+                        </div>
+                        <div class="payment-method mt-5">
+                          <h5 class="">Payment Method</h5>
+                          <small class="text-muted"
+                            >All transaction are secure and encrypted</small
+                          >
+                          <div class="input-group input-group-lg my-3">
+                            <span class="input-group-text border-0 bg-white">
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="payment-method"
+                                  value="credit-card"
+                                  id="payment-credit-card"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="payment-credit-card"
+                                >
+                                  Credit/Debit Card
+                                </label>
+                              </div>
+                            </span>
+                            <span
+                              class="form-control border-0 bg-white text-end"
+                            >
+                              <img
+                                src="../assets/img/mastercard.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                              <img
+                                src="../assets/img/visa.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </span>
+                          </div>
+                          <div
+                            id="credit-card-detail"
+                            class="hide credit-card-detail"
+                          >
+                            <div class="mb-3">
+                              <input
+                                type="text"
+                                class="form-control bg-light border-0 form-control-lg"
+                                placeholder="Card number"
+                              />
+                            </div>
+                            <div class="mb-3">
+                              <input
+                                type="text"
+                                class="form-control bg-light border-0 form-control-lg"
+                                placeholder="Cardholder name"
+                              />
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="mb-3">
+                                  <input
+                                    type="text"
+                                    class="form-control bg-light border-0 form-control-lg"
+                                    placeholder="Expiration data (MM/YY)"
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="mb-3">
+                                  <input
+                                    type="text"
+                                    class="form-control bg-light border-0 form-control-lg"
+                                    placeholder="Security code"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input-group input-group-lg">
+                            <span class="input-group-text bg-white border-0">
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="payment-method"
+                                  value="bank-transfer"
+                                  id="payment-transfer"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="payment-transfer"
+                                >
+                                  Transfer via Bank
+                                </label>
+                              </div>
+                            </span>
+                            <span class="form-control bg-white border-0"></span>
+                          </div>
+                          <div
+                            id="bank-detail"
+                            class="hide bank-detail bg-light p-2 px-3 text-secondary d-flex justify-content-between align-items-center"
+                          >
+                            <span>
+                              <img
+                                class="img-fluid"
+                                width="60"
+                                src="../assets/img/bca.png"
+                                alt=""
+                              />
+                            </span>
+                            <span class="bank-name">Bank Central Asia</span>
+                            <span class="divider-dot"> </span>
+                            <span class="bank-no">2771938382</span>
+                            <span class="divider-dot"> </span>
+                            <span class="bank-recipient"
+                              >Life Roots Official</span
+                            >
+                            <a href="#" class="change">Change</a>
+                          </div>
+                        </div>
+                        <div class="rememberme mt-5">
+                          <h5>Remember Me</h5>
+                          <div class="mb-3">
+                            <input
+                              type="checkbox"
+                              id="rememberme"
+                              name=""
+                              class="form-check-input me-2"
+                              placeholder=""
+                            />
+                            <label for="rememberme" class="fw-bold"
+                              >Save my information for faster checkout</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="checkout-nav-btn d-flex justify-content-between my-5"
+                      >
+                        <div class="checkout-prev">
+                          <a href="#" class="btn-link btn btnPrev">
+                            <i class="fas fa-chevron-left"></i>
+                            Return to information
+                          </a>
+                        </div>
+                        <div class="checkout-next">
+                          <button class="btn btn-outline-success btn-lg px-5" data-bs-toggle="modal" data-bs-target="#modal-payment">
+                            Pay Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="checkout-footer border-top pt-2">
+                    <a class="me-3" href="#">Refund Policy</a>
+                    <a class="me-3" href="#">Privacy Policy</a>
+                    <a class="me-3" href="#">Term of Service</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-payment" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content" style="height: 90vh;">
+                    
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="container-fluid">
+                       <div class="text-center">
+                            <img class="img-fluid" src="../assets/img/natura_logo.png" alt="">
+                            <h4 class="fw-bold">Your purchase is successful <img width="60" src="../assets/img/cart.png" alt=""> </h4>
+                            <a href="/index.html">Continue to shopping <i class="fas fa-arrow-circle-right    "></i> </a>
+                       </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var modelId = document.getElementById('modelId');
+    
+        modelId.addEventListener('show.bs.modal', function (event) {
+              // Button that triggered the modal
+              let button = event.relatedTarget;
+              // Extract info from data-bs-* attributes
+              let recipient = button.getAttribute('data-bs-whatever');
+    
+            // Use above variables to manipulate the DOM
+        });
+    </script>
+    
+
+    <script>
+      const nextBtn = document.querySelectorAll(".btnNext");
+      const prevBtn = document.querySelectorAll(".btnPrev");
+
+      console.log(document.querySelectorAll("#myTab li a"))
+
+      nextBtn.forEach(function (item, index) {
+        item.addEventListener("click", function () { 
+            // index = index + 1;
+          let id = index + 1;
+          let tabElement = document.querySelectorAll("#myTab li a")[id];
+          console.log(tabElement)
+          var lastTab = new bootstrap.Tab(tabElement);
+          lastTab.show();
+        });
+      });
+
+      prevBtn.forEach(function (item, index) {
+        item.addEventListener("click", function () {
+            // index = index + 1;
+          let id = index - 1;
+          let tabElement = document.querySelectorAll("#myTab li a")[id];
+          console.log(tabElement)
+          var lastTab = new bootstrap.Tab(tabElement);
+          lastTab.show();
+        });
+      });
+    </script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- <script src="../assets/js/main.js"></script> -->
+
+    <script>
+      // var payment_method = document.querySelector("input[name='payment-method']");
+      // console.log(payment_method);
+      // console.log('test')
+
+      document.addEventListener("change", function (e) {
+        console.log(e.target);
+        if (e.target.getAttribute("name") == "payment-method") {
+          console.log(e.target.getAttribute("name"));
+          console.log(e.target.value);
+          if (e.target.value == "credit-card") {
+            document.querySelector("#credit-card-detail").classList.add("show");
+            document.querySelector("#bank-detail").classList.remove("show");
+          } else {
+            document.querySelector("#bank-detail").classList.add("show");
+            document
+              .querySelector("#credit-card-detail")
+              .classList.remove("show");
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

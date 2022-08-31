@@ -129,6 +129,11 @@ a:hover {
 
 /* End Networking */
 
+/* Product Lists */
+.product {
+  border-radius: 20px;
+}
+
 /* Product Details */
 .product-nav .nav-link {
   color: #111;
@@ -141,7 +146,7 @@ a:hover {
   height: 700px;
 }
 
-.product-img {
+#product-details .product-img {
   margin-left: -100px;
   margin-right: -100px;
 }

@@ -122,6 +122,10 @@ a:hover {
   height: 267px;
   overflow: hidden;
 }
+.divider-img-height img {
+  height: 100%;
+  object-fit: cover;
+}
 
 .gifts-img {
   border-radius: 40px;
@@ -143,12 +147,12 @@ a:hover {
 
 .product-detail {
   background: radial-gradient(50% 68.01% at 50% 50%, #ffffff 0%, #ebfffe 100%);
-  height: 700px;
+  /*height: 700px;*/
 }
 
 #product-details .product-img {
-  margin-left: -100px;
-  margin-right: -100px;
+  /*margin-left: -100px;
+  margin-right: -100px;*/
 }
 
 span.product-num {
@@ -161,6 +165,8 @@ span.product-num {
   background: #fff;
   border-radius: 40px;
 }
+
+
 
 .product-concept-card-body {
   /* padding: 4em; */
@@ -366,4 +372,21 @@ span.divider-dot:before {
 .checkout-prev a {
   text-decoration: none;
   color: #aaa;
+}
+
+.card.form-login {
+  border-radius: 15px;
+}
+
+.register-logo.sticky-top {
+  top: 100px;
+}
+
+@media (max-width:768px) {
+  .product-concept-card {
+  	margin-top:0;
+  }	 
+  .bg-dot {
+    background: none!important;
+	}
 }

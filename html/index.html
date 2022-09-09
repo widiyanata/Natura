@@ -11,7 +11,7 @@
 
     <link
       rel="shortcut icon"
-      href="assets/img/natura_logo.png"
+      href="assets/img/natura_fav_logo.png"
       type="image/x-icon"
     />
 
@@ -66,14 +66,14 @@
             <li class="nav-item">
               <a class="nav-link" href="pages/products.html">Products</a>
             </li>
-            <li class="nav-item">
+            <!--<li class="nav-item">
               <a class="nav-link" href="pages/product-details.html"
                 >Product Details</a
               >
-            </li>
-            <li class="nav-item">
+            </li>-->
+            <!--<li class="nav-item">
               <a class="nav-link" href="pages/checkout.html">Checkout</a>
-            </li>
+            </li> -->
             <li class="nav-item dropdown">
               <button
                 class="btn nav-link dropdown-toggle"
@@ -109,7 +109,8 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="pages/page-cart.html">
-                <i class="fas fa-cart-plus"></i>
+                <i class="nav-link fas fa-cart-plus" style="pointer-events: none;"></i>
+                
               </a>
             </li>
             <!-- <li class="nav-item">
@@ -117,20 +118,30 @@
               </li> -->
           </ul>
           <span class="navbar-text border-left">
-            <div class="login-register">
-              <a href="#" class="btn btn-outline-success rounded-pill px-4 mx-1"
+            <div class="login-register btn-group">
+              <a href="login.html" class="btn btn-outline-success rounded-pill px-4 mx-1"
                 >Login</a
               >
               <a
-                href="#"
+                href="register.html"
                 class="btn btn-success rounded-pill px-4 mx-1 text-white"
                 >Register</a
               >
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle ms-2 rounded-pill" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  IND <img width="25" src="assets/img/flag-id.png" alt="">
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#"> <img width="25" src="assets/img/flag-id.png" alt=""> Bahasa Indonesia</a></li>
+                  <li><a class="dropdown-item" href="#"> <img width="25" src="assets/img/flag-en.png" alt=""> English</a></li>
+                </ul>
+              </div>
               <!-- <a href="#" data-bs-toggle="modal" data-bs-target="#modelsearch">
                       <i class="fas fa-search"></i>
                     </a> -->
             </div>
           </span>
+          
         </div>
       </div>
     </nav>
@@ -263,6 +274,7 @@
       let navlink = document.querySelectorAll("a.nav-link");
       console.log(navlink);
       navlink;
+      /*
       for (let elm of navlink) {
         elm.addEventListener("click", function (e) {
           let page = e.target.getAttribute("href");
@@ -276,7 +288,24 @@
           getPage(page);
           // e.classList.add('active')
         });
-      }
+      }*/
+      document.querySelector("body").addEventListener("click", function (e) {
+        if (e.target.classList.contains("nav-link")) {
+          
+          let page = e.target.getAttribute("href");
+          console.log(page);
+      console.log(e.target.tagName);
+          if (page!='#' && e.target.tagName=='A' && e.target.getAttribute('href').indexOf('#') != 0 ) {
+      		e.preventDefault();
+            // remove active class
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+            // e.classList.remove('active')
+            getPage(page);
+          }
+        }
+      });
 
       function getPage(page) {
         fetch(page)

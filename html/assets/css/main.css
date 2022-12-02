@@ -433,3 +433,10 @@ span.divider-dot:before {
   border-left: 3px solid #5bc029;
   border-radius: 10px 10px 0 0;
 }
+.about-card .card-img-overlay {
+  opacity: 0;
+}
+.about-card:hover .card-img-overlay {
+  opacity: 1;
+  transition: opacity ease .5s;
+}

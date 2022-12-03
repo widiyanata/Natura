@@ -485,3 +485,22 @@ span.divider-dot:before {
   z-index: 0;
   border-radius: 50%;
 }
+
+@media (max-width: 425px) {
+  .visi-misi-content .icon {
+    border: 7px solid #5BC029;
+    width: 200px;
+    margin-right: -52px;
+    height: 200px;
+    /* position: absolute; */
+    /* bottom: -20px; */
+    /* left: -90px; */
+    background: #fff;
+    z-index: 1;
+    margin: 10px auto;
+  }
+
+  .icon-back {
+    display: none;
+  }
+}

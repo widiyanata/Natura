@@ -453,7 +453,7 @@ span.divider-dot:before {
 }
 
 .visi-misi-content .icon {
-  border: 7px solid #5BC029;
+  /* border: 7px solid #5BC029; */
   width: 250px;
   margin-right: -52px;
   height: 250px;

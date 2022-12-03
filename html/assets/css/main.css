@@ -452,6 +452,7 @@ span.divider-dot:before {
   border-radius: 0 25px 0 0;
 }
 
+
 .visi-misi-content .icon {
   /* border: 7px solid #5BC029; */
   width: 250px;
@@ -461,6 +462,7 @@ span.divider-dot:before {
   bottom: -20px;
   left: -90px;
   background: #fff;
+  z-index: 1;
 }
 
 .visi-misi {
@@ -469,13 +471,17 @@ span.divider-dot:before {
   display: flex;
   /* align-items: end; */
   margin-bottom: 150px;
+  z-index: 3;
+  position: relative;
 }
 
 .icon-back {
-  width: 260px;
-  height: 260px;
+  width: 270px;
+  height: 270px;
   position: absolute;
-  bottom: -10px;
-  left: -80px;
+  bottom: -30px;
+  left: -112px;
   background: #5BC029;
+  z-index: 0;
+  border-radius: 50%;
 }

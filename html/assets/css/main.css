@@ -457,6 +457,10 @@ span.divider-dot:before {
   height: 200px;
   position: absolute;
   top: -45px;
-  left: 155px;
+  left: -55px;
   background: #fff;
+}
+
+.visi-misi {
+  border-radius: 0 30px 30px 0;
 }

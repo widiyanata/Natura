@@ -28,6 +28,10 @@ a:hover {
       rgba(255, 255, 255, 0) 100%);
 }
 
+.bg-success {
+  background-color: #5BC029 !important;
+}
+
 .rounded-4 {
   border-radius: 2.5em;
 }
@@ -440,4 +444,19 @@ span.divider-dot:before {
   opacity: 1;
   background: rgba(255, 255, 255, 0.75);
   transition: opacity ease .5s;
+}
+
+.judul {
+  border-radius: 0 25px 0 0;
+}
+
+.vision-mision .icon {
+  border: 7px solid #5BC029;
+  width: 200px;
+  margin-right: -52px;
+  height: 200px;
+  position: absolute;
+  top: -45px;
+  left: 155px;
+  background: #fff;
 }

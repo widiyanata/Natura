@@ -81,6 +81,11 @@ a:hover {
 .banner {
   height: 85vh;
 }
+@media (max-width: 420px) {
+  .banner {
+    height: 50vh;
+  }
+}
 
 /* End About Page */
 
@@ -213,6 +218,12 @@ span.product-num {
 /* Join Us */
 #join-us {
   height: 700px;
+}
+
+@media (max-width: 420px) {
+  #join-us {
+    height: 50vh;
+  }
 }
 
 .oportunities-header {
@@ -502,5 +513,9 @@ span.divider-dot:before {
 
   .icon-back {
     display: none;
+  }
+
+  .fitur-text {
+    background-color: #fff!important;
   }
 }

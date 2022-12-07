@@ -519,3 +519,7 @@ span.divider-dot:before {
     background-color: #fff!important;
   }
 }
+
+.star-rating .checked {
+  color: orange;
+}

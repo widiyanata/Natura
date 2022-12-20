@@ -340,20 +340,31 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-4">
-            <section class="slider-wrapper">
-              <button class="slide-arrow" id="slide-arrow-prev">
-                &#8249;
-              </button>
-            
-              <button class="slide-arrow" id="slide-arrow-next">
-                &#8250;
-              </button>
-            
-              <ul class="slides-container" id="slides-container1">
-                <li class="slide"><img src="https://picsum.photos/300" class="img-fluid w-100 rounded" alt=""></li>
-                <li class="slide"><img src="https://picsum.photos/300" class="img-fluid w-100 rounded" alt=""></li>                
-              </ul>
-            </section>
+           <!-- Slider main container -->
+          <div class="swiper1">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="https://picsum.photos/300" class="img-fluid w-100 rounded" alt=""></div>
+              <div class="swiper-slide"><img src="https://picsum.photos/300" class="img-fluid w-100 rounded" alt=""></div>
+              <div class="swiper-slide"><img src="https://picsum.photos/300" class="img-fluid w-100 rounded" alt=""></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+          </div>
+          <script>
+            const swiper = new Swiper('.swiper1', {
+              speed: 400,
+              spaceBetween: 100,
+            });
+          </script>
             
             <!-- <img src="https://picsum.photos/300" class="img-fluid w-100 rounded" alt=""> -->
           </div>
@@ -380,20 +391,31 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-4">
-            <section class="slider-wrapper">
-              <button class="slide-arrow" id="slide-arrow-prev">
-                &#8249;
-              </button>
-            
-              <button class="slide-arrow" id="slide-arrow-next">
-                &#8250;
-              </button>
-            
-              <ul class="slides-container" id="slides-container2">
-                <li class="slide"><img src="https://picsum.photos/300" class="img-fluid w-100 rounded" alt=""></li>
-                <li class="slide"><img src="https://picsum.photos/300" class="img-fluid w-100 rounded" alt=""></li>                
-              </ul>
-            </section>
+            <!-- Slider main container -->
+          <div class="swiper2">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="https://picsum.photos/300" class="img-fluid w-100 rounded" alt=""></div>
+              <div class="swiper-slide"><img src="https://picsum.photos/300" class="img-fluid w-100 rounded" alt=""></div>
+              <div class="swiper-slide"><img src="https://picsum.photos/300" class="img-fluid w-100 rounded" alt=""></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+          </div>
+          <script>
+            const swiper2 = new Swiper('.swiper2', {
+              speed: 400,
+              spaceBetween: 100,
+            });
+          </script>
           </div>
           <div class="col-md-8">
             <div class="testimony p-4 my-4 position-relative text-center shadow rounded bg-white">

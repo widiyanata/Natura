@@ -340,17 +340,20 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-4">
-            <section id="slider1" class="splide" aria-label="Splide Slider">
-              <div class="splide__track">
-                <ul class="splide__list">
-                  <li class="splide__slide"><img src="https://picsum.photos/300" class="img-fluid w-100 rounded" alt=""></li>
-                  <li class="splide__slide"><img src="https://picsum.photos/300" class="img-fluid w-100 rounded" alt=""></li>
-                </ul>
-              </div>
+            <section class="slider-wrapper">
+              <button class="slide-arrow" id="slide-arrow-prev">
+                &#8249;
+              </button>
+            
+              <button class="slide-arrow" id="slide-arrow-next">
+                &#8250;
+              </button>
+            
+              <ul class="slides-container" id="slides-container1">
+                <li class="slide"><img src="https://picsum.photos/300" class="img-fluid w-100 rounded" alt=""></li>
+                <li class="slide"><img src="https://picsum.photos/300" class="img-fluid w-100 rounded" alt=""></li>                
+              </ul>
             </section>
-            <script>
-              new Splide( '#slider1' ).mount();
-            </script>
             
             <!-- <img src="https://picsum.photos/300" class="img-fluid w-100 rounded" alt=""> -->
           </div>
@@ -377,17 +380,20 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-4">
-            <section id="slider2" class="splide" aria-label="Splide Slider">
-              <div class="splide__track">
-                <ul class="splide__list">
-                  <li class="splide__slide"><img src="https://picsum.photos/300" class="img-fluid w-100 rounded" alt=""></li>
-                  <li class="splide__slide"><img src="https://picsum.photos/300" class="img-fluid w-100 rounded" alt=""></li>
-                </ul>
-              </div>
+            <section class="slider-wrapper">
+              <button class="slide-arrow" id="slide-arrow-prev">
+                &#8249;
+              </button>
+            
+              <button class="slide-arrow" id="slide-arrow-next">
+                &#8250;
+              </button>
+            
+              <ul class="slides-container" id="slides-container">
+                <li class="slide"><img src="https://picsum.photos/300" class="img-fluid w-100 rounded" alt=""></li>
+                <li class="slide"><img src="https://picsum.photos/300" class="img-fluid w-100 rounded" alt=""></li>                
+              </ul>
             </section>
-            <script>
-              new Splide( '#slider2' ).mount();
-            </script>
           </div>
           <div class="col-md-8">
             <div class="testimony p-4 my-4 position-relative text-center shadow rounded bg-white">
@@ -418,3 +424,45 @@
     <span class="visually-hidden">Next</span>
     </button>
 </div>
+
+<style>
+.slider-wrapper {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.slides-container {
+  height: calc(100vh - 2rem);
+  width: 100%;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+.slide {
+  width: 100%;
+  height: 100%;
+  flex: 1 0 100%;
+}
+</style>
+<script>
+const slidesContainer = document.getElementById("slides-container1");
+const slidesContainer2 = document.getElementById("slides-container2");
+const slide = document.querySelector(".slide");
+const prevButton = document.getElementById("slide-arrow-prev");
+const nextButton = document.getElementById("slide-arrow-next");
+
+nextButton.addEventListener("click", () => {
+  const slideWidth = slide.clientWidth;
+  slidesContainer.scrollLeft += slideWidth;
+  slidesContainer2.scrollLeft += slideWidth;
+});
+
+prevButton.addEventListener("click", () => {
+  const slideWidth = slide.clientWidth;
+  slidesContainer.scrollLeft -= slideWidth;
+  slidesContainer2.scrollLeft -= slideWidth;
+});
+</script>
